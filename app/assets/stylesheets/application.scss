@@ -10,15 +10,16 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- 
+
  *= require_self
  */
 @charset 'utf-8';
-    
+
 @import 'normalize-rails';
-    
+
 @import 'font-awesome';
 @import 'bourbon';
-   
+@import 'pages';
+@import 'scss/style';
 @import 'neat';  // Custom bootstrap variables must be set or imported before bootstrap itself.
-@import "bootstrap";
+@import 'bootstrap';

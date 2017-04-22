@@ -1,2 +1,408 @@
 %h1 Pages#index
 %p Find me in app/views/pages/index.html.haml
+
+
+%section#home.dzsparallaxer.auto-init.dzsparallaxer---window-height.use-loading{"data-options" => "{  mode_scroll: \"normal\" }", :style => "position: relative; height: 800px;"}
+  .divimage.dzsparallaxer--target{"data-src" => "assets/images/bg1.jpg", :style => "width: 100%; height: 130%; background-image: url()"}
+    .hero-parallax
+      .hero-inner
+        .hero-content
+          .container.text-center
+            .row
+              .col-md-10.offset-md-1
+                .hero-static
+                  %h1 Clean Modern Startup for your web and mobile apps.
+                  %p.lead
+                    Create a website that will impress your clients  visitors
+                  .buttons
+                    %a.btn.btn-xl.btn-primary.video-popup{:href => "https://www.youtube.com/watch?v=8zxj-6smeVA"}
+                      Video Tour
+                      %i.ion-play
+                    %a.btn.btn-xl.btn-white-border{:href => "#"} Sign Up Free
+          / container
+        / hero content
+      / hero inner
+    / parallax hero
+  / parallax image div
+/ intro section end
+%section.features-section.border-bottom
+  .container
+    .row
+      .col-md-6.col-lg-3.margin-b-30
+        .feature-box-center.text-center
+          %i.ion-iphone
+          %h4.text-capitalize Fully Responsive
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+      / /col
+      .col-md-6.col-lg-3.margin-b-30
+        .feature-box-center.text-center
+          %i.ion-ios-person-outline
+          %h4.text-capitalize User Friendly
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+      / /col
+      .col-md-6.col-lg-3.margin-b-30
+        .feature-box-center.text-center
+          %i.ion-ios-cog-outline
+          %h4.text-capitalize Well Documented
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+      / /col
+      .col-md-6.col-lg-3.margin-b-30
+        .feature-box-center.text-center
+          %i.ion-key
+          %h4.text-capitalize Easy  Customizable
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+      / /col
+/ end features section
+%section.showcase-section
+  .space-90
+  .container
+    .row.align-items-center
+      .col-md-5.margin-b-30
+        %h3
+          Easily customizable with great user interface.
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in. Mauris tristique id urna at cursus. Aliquam maximus, ligula nec commodo maximus, felis metus sagittis ligula, lobortis consequat ante risus ut elit.
+        .row
+          .col-md-6
+            %ul.list
+              %li
+                %i.ion-ios-arrow-thin-right>
+                Lorem ipsum dolor
+              %li
+                %i.ion-ios-arrow-thin-right>
+                Duis lacinia dolor quis
+          .col-md-6
+            %ul.list
+              %li
+                %i.ion-ios-arrow-thin-right>
+                Lorem ipsum dolor
+              %li
+                %i.ion-ios-arrow-thin-right>
+                Duis lacinia dolor
+      .col-md-6.offset-md-1.margin-b-30
+        %img.img-fluid.center-img{:alt => "", :src => "assets/images/shot1.png"}
+      .space-60
+  / end showcase section
+  %section.showcase-section.bg-faded
+    .space-90
+    .container
+      .row.align-items-center
+        .col-md-5.offset-md-1.margin-b-30
+          %img.img-fluid{:alt => "", :src => "assets/images/iphone.png"}
+          .col-md-5.margin-b-30
+            %h3
+              A fully featured  well designed template that works perfectly on all devices.
+            %p.margin-b-20
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in. Mauris tristique id urna at cursus. Aliquam maximus, ligula nec commodo maximus, felis metus sagittis ligula, lobortis consequat ante risus ut elit.
+            %a.btn.btn-lg.btn-primary.btn-rounded{:href => "#"} Learn More
+      .space-30
+    / end showcase section
+    %section.pricing-section
+      .space-90
+      .container
+        .center-title
+          %h2 Easy plans. Cancel anytime.
+          %p All Plans Include a 14 day free trail
+        .row
+          .col-md-4.margin-b-30
+            .price-box
+              .price-header
+                %h1 Free
+                %h4 Basic Plan
+              %ul.list-unstyled.price-features
+                %li 5 Team Members
+                %li 6 Month Support
+                %li 10 Pages
+                %li 1 Domain
+                %li 25 GB Storage
+              .price-footer
+                %a.btn.btn-rounded.btn-dark-border{:href => "#"} Sign Up
+          / /col
+          .col-md-4.margin-b-30
+            .price-box.best-plan
+              .price-header
+                %h1
+                  %span.dolor> $
+                  9.99
+                  %span.peroid /Month
+                %h4 Pro Plan
+              %ul.list-unstyled.price-features
+                %li 15 Team Members
+                %li 12 Month Support
+                %li 30 Pages
+                %li 5 Domain
+                %li 100 GB Storage
+              .price-footer
+                %a.btn.btn-rounded.btn-white-border{:href => "#"} Sign Up
+          / /col
+          .col-md-4.margin-b-30
+            .price-box
+              .price-header
+                %h1
+                  %span.dolor> $
+                  29.99
+                  %span.peroid /Month
+                %h4 Gold Plan
+              %ul.list-unstyled.price-features
+                %li 25 Team Members
+                %li 24/7 Support
+                %li Unlimited Pages
+                %li 10 Domain
+                %li Unlimited Storage
+              .price-footer
+                %a.btn.btn-rounded.btn-dark-border{:href => "#"} Sign Up
+          / /col
+      .space-60
+    / end pricing section
+    %section.testimonials.skin-bg
+      .space-90
+      .container
+        .center-title
+          %h2 True words from our customers.
+          %p Over 500,000 Customers worldwide
+        .row
+          .col-md-4.margin-b-30
+            .feedback-box
+              %p
+                " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper. "
+            .testi-info
+              %img.rounded-circle{:alt => "", :src => "assets/images/avtar-1.jpg", :width => "60"}
+                .content
+                  %h4 Nikita Miller
+                  %em Saas Customer
+            .col-md-4.margin-b-30
+              .feedback-box
+                %p
+                  " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper. "
+              .testi-info
+                %img.rounded-circle{:alt => "", :src => "assets/images/avtar-2.jpg", :width => "60"}
+                  .content
+                    %h4 John Doe
+                    %em Saas Customer
+              .col-md-4.margin-b-30
+                .feedback-box
+                  %p
+                    " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper. "
+                .testi-info
+                  %img.rounded-circle{:alt => "", :src => "assets/images/avtar-3.jpg", :width => "60"}
+                    .content
+                      %h4 Emily Howkins
+                      %em Saas Customer
+            .space-60
+          / end testimonials section
+          %section.steps
+            .space-90
+            .container
+              .center-title
+                %h2 Easy to get started. 3 Step process.
+                %p Take a look what the people think about our product
+              .row
+                .col-md-4.margin-b-30
+                  .step-box
+                    %h1 01
+                    %h4 Create Account.
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+                .col-md-4.margin-b-30
+                  .step-box
+                    %h1 02
+                    %h4 Select Plan.
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+                .col-md-4.margin-b-30
+                  .step-box
+                    %h1 03
+                    %h4 Assign Tasks.
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+            .space-60
+          / end steps
+          %section.features-bg
+            .container
+              .center-title
+                %h2 Why choose SAAS
+                %p Over 500,000 Customers worldwide
+              .row
+                .col-md-6
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-iphone
+                    .content
+                      %h4 Fully Responsive
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-social-google
+                    .content
+                      %h4 Google fonts
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-ios-copy
+                    .content
+                      %h4 Well documented
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+                .col-md-6
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-social-twitter
+                    .content
+                      %h4 Bootstrap based
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-ios-person
+                    .content
+                      %h4 Item Support
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+                  .feature-icon-left.clearfix
+                    .icon
+                      %i.ion-ios-cog
+                    .content
+                      %h4 Easy to use
+                      %p
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                  / /feature icon
+          %section.app-section.bg-faded
+            .space-90
+            .container
+              .row.align-items-center
+                .col-md-6.margin-b-30
+                  / 16:9 aspect ratio
+                  .embed-responsive.embed-responsive-16by9
+                    %iframe{:frameborder => "0", :height => "480", :src => "https://www.youtube.com/embed/8zxj-6smeVA", :width => "854"}
+                .col-md-5.offset-md-1
+                  %h3 Download our mobile app.
+                  %p.margin-b-20
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus magna a lacinia tempor. Fusce et turpis posuere, imperdiet orci et, tempus ex. Nunc vitae pellentesque ipsum. Quisque id magna a nisl vestibulum ullamcorper.
+                  .app-buttons
+                    %a{:href => "#"}
+                      %img{:alt => "", :src => "assets/images/app-store.png"}/
+                      %a{:href => "#"}
+                        %img{:alt => "", :src => "assets/images/play-store.png"}/
+                .space-60
+              .container
+                .space-90
+                .center-title
+                  %h2 Our worldwide partners.
+                  %p Over 500,000 Customers worldwide
+                %ul.row.list-unstyled.partners-list
+                  %li.col-md-2
+                    %a{:href => "#"}
+                      %img.img-fluid{:alt => "", :src => "assets/images/p1.png"}/
+                    %li.col-md-2
+                      %a{:href => "#"}
+                        %img.img-fluid{:alt => "", :src => "assets/images/p2.png"}/
+                      %li.col-md-2
+                        %a{:href => "#"}
+                          %img.img-fluid{:alt => "", :src => "assets/images/p3.png"}/
+                        %li.col-md-2
+                          %a{:href => "#"}
+                            %img.img-fluid{:alt => "", :src => "assets/images/p4.png"}/
+                          %li.col-md-2
+                            %a{:href => "#"}
+                              %img.img-fluid{:alt => "", :src => "assets/images/p5.png"}/
+                            %li.col-md-2
+                              %a{:href => "#"}
+                                %img.img-fluid{:alt => "", :src => "assets/images/p6.png"}/
+                              %li.col-md-2
+                                %a{:href => "#"}
+                                  %img.img-fluid{:alt => "", :src => "assets/images/p3.png"}/
+                                %li.col-md-2
+                                  %a{:href => "#"}
+                                    %img.img-fluid{:alt => "", :src => "assets/images/p4.png"}/
+                                  %li.col-md-2
+                                    %a{:href => "#"}
+                                      %img.img-fluid{:alt => "", :src => "assets/images/p5.png"}/
+                                    %li.col-md-2
+                                      %a{:href => "#"}
+                                        %img.img-fluid{:alt => "", :src => "assets/images/p6.png"}/
+                                      %li.col-md-2
+                                        %a{:href => "#"}
+                                          %img.img-fluid{:alt => "", :src => "assets/images/p1.png"}/
+                                        %li.col-md-2
+                                          %a{:href => "#"}
+                                            %img.img-fluid{:alt => "", :src => "assets/images/p2.png"}/
+                                      .space-70
+                                      .cta-skin
+                                        .container.text-center
+                                          %h2 Are you interested in SAAS
+                                          %p Get 30 days trial. No credit card required.
+                                          %a.btn.btn-rounded.btn-white-border{:href => "#"} Create Account
+                                      %footer.footer
+                                        .space-50
+                                        .container
+                                          .row.vertical-align-child
+                                            .col-md-3.margin-b-30
+                                              .margin-b-20
+                                                %a{:href => "#"}
+                                                  %img{:alt => "", :src => "assets/images/logo-light.png"}
+                                                %p
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque efficitur turpis, vitae dictum dolor tristique in.
+                                              .col-md-2.margin-b-30
+                                                %ul.list-unstyled
+                                                  %li
+                                                    %a{:href => "#"} About
+                                                  %li
+                                                    %a{:href => "#"} Career
+                                                  %li
+                                                    %a{:href => "#"} Terms
+                                                  %li
+                                                    %a{:href => "#"} Privacy
+                                              .col-md-2.margin-b-30
+                                                %ul.list-unstyled
+                                                  %li
+                                                    %a{:href => "#"} Blog
+                                                  %li
+                                                    %a{:href => "#"} Press Kit
+                                                  %li
+                                                    %a{:href => "#"} Support
+                                                  %li
+                                                    %a{:href => "#"} Contact
+                                              .col-md-5.margin-b-30
+                                                %ul.list-inline.social
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-facebook
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-twitter
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-googleplus
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-linkedin
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-rss
+                                                  %li.list-inline-item
+                                                    %a{:href => "#"}
+                                                      %i.ion-social-youtube
+                                                %h4 Subscribe to newsletter
+                                                %form.signup-form.navbar-form.margin-b-20
+                                                  .form-group
+                                                    %input.form-control{:placeholder => "Enter your email address", :type => "text"}
+                                                    %button.btn.btn-cta.btn-primary.btn-lg{:type => "submit"} Subscribe
+                                                  %span Copyright 2016 - 2020
+                                            .space-20
+
+
+
+/ jQuery plugins
+%script{:src => "assets/plugins/plugins.js"}
+%script{:src => "assets/template-custom.js", :type => "text/javascript"}
