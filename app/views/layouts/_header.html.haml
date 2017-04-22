@@ -1,0 +1,10 @@
+%header
+  %nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse
+    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "headerNavBar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#headerNavBar", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    = link_to site_name, root_path, class:"navbar-brand"
+    #headerNavBar.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        %li.nav-item= link_to "About", pages_about_path, class:"nav-link"
+        %li.nav-item= link_to "Contact Us", pages_contact_path, class:"nav-link"
+        %li.nav-item= link_to "Privacy", pages_privacy_path, class:"nav-link"
