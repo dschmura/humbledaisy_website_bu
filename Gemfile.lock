@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actioncable (5.1.0.rc2)
       actionpack (= 5.1.0.rc2)
@@ -46,7 +47,19 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
     arel (8.0.0)
+    autoprefixer-rails (6.7.7.2)
+      execjs
     bindex (0.5.0)
+    bitters (1.5.0)
+      bourbon (~> 5.0.0.beta.7)
+      sass (~> 3.4)
+      thor (~> 0.19)
+    bootstrap (4.0.0.alpha6)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
+    bourbon (5.0.0.beta.7)
+      sass (~> 3.4.22)
+      thor (~> 0.19.1)
     builder (3.2.3)
     byebug (9.0.6)
     capistrano (3.8.1)
@@ -166,6 +179,9 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
+    neat (1.8.0)
+      sass (>= 3.3)
+      thor (~> 0.19)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -201,6 +217,7 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.1.0.rc2)
       sprockets-rails (>= 2.0.0)
+    rails-assets-tether (1.4.0)
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
@@ -299,6 +316,9 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.7)
+  bitters
+  bootstrap (~> 4.0.0.alpha6)
+  bourbon
   byebug
   capistrano-passenger
   capistrano-postgresql (~> 4.2.0)
@@ -318,12 +338,14 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  neat (~> 1.8)
   normalize-rails
   pg (~> 0.18)
   pry
   pry-rails
   puma (~> 3.7)
   rails (~> 5.1.0.rc2)
+  rails-assets-tether (>= 1.1.0)!
   rspec-rails (~> 3.5.0)
   sass-rails (~> 5.0)
   selenium-webdriver
