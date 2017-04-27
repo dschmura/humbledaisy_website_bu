@@ -74,12 +74,14 @@ desc 'Upload to shared/config'
   on roles (:app) do
     upload! "config/secrets.yml.key",  "#{shared_path}/config/secrets.yml.key"
     upload! "config/puma.rb.sample",  "#{shared_path}/config/puma.rb"
+    upload! "config/nginx.conf",  "#{shared_path}/config/nginx.conf"
   end
 end
 
 before :starting,  :check_revision
 after  :finishing, :compile_assets
 after  :finishing, :cleanup
+
 end
 
 desc "Run rake db:seed on a remote server."

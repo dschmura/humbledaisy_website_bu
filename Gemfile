@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 group :development do
@@ -64,23 +67,19 @@ end
 group :test do
   gem 'shoulda-matchers'
   gem 'ffaker'
-  gem 'capybara'
   gem 'database_cleaner'
-  gem 'selenium-webdriver'
 end
 
 group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rbenv',   require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+  gem 'capistrano-rake',    require: false
   gem 'erb2haml'
   gem 'pry'
   gem 'pry-rails'
-end
-
-group :development do
-    gem 'capistrano',         require: false
-    gem 'capistrano-rbenv',   require: false
-    gem 'capistrano-rails',   require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
 end
 
 gem 'guard-rails', group: :development
