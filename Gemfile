@@ -54,7 +54,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails'
 gem 'normalize-rails'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.1'
 group :development, :test do
   gem 'rspec-rails', '~>3.5.0'
   gem 'factory_girl_rails'
@@ -70,12 +70,17 @@ group :test do
 end
 
 group :development do
-  gem 'capistrano-rails'
-  gem 'capistrano-postgresql', '~> 4.2.0'
-  gem 'capistrano-rake', require: false
   gem 'erb2haml'
   gem 'pry'
   gem 'pry-rails'
+end
+
+group :development do
+    gem 'capistrano',         require: false
+    gem 'capistrano-rbenv',   require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
 end
 
 gem 'guard-rails', group: :development
