@@ -70,8 +70,6 @@ GEM
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-passenger (0.2.0)
-      capistrano (~> 3.0)
     capistrano-postgresql (4.2.1)
       capistrano (>= 3.0)
     capistrano-rails (1.2.3)
@@ -79,9 +77,6 @@ GEM
       capistrano-bundler (~> 1.1)
     capistrano-rake (0.1.0)
       capistrano (>= 3.0)
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
     capybara (2.13.0)
       addressable
       mime-types (>= 1.16)
@@ -174,7 +169,7 @@ GEM
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     lumberjack (1.0.11)
-    mail (2.6.4)
+    mail (2.6.5)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
     mime-types (3.1)
@@ -324,11 +319,9 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   bourbon
   byebug
-  capistrano-passenger
   capistrano-postgresql (~> 4.2.0)
   capistrano-rails
   capistrano-rake
-  capistrano-rvm
   capybara
   coffee-rails (~> 4.2)
   database_cleaner

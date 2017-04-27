@@ -17,28 +17,15 @@
         %span.input-group-addon.close-search
           %i.ion-android-close
   / End Top Search
-
-/ Static navbar
-%nav.navbar.navbar-toggleable-md.navbar-light.fixed-top.navbar-transparent.clearfix
-  / Start Top Search
-  .top-search.clearfix
-    .container
-      .input-group
-        %span.input-group-addon
-          %i.ion-search
-        %input.form-control{:placeholder => "Search", :type => "text"}/
-        %span.input-group-addon.close-search
-          %i.ion-android-close
-  / End Top Search
   .clearfix
   .container
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     %a.navbar-brand{:href => "index.html"}
-      = link_to image_tag('HumbleDaisy_Logo.png', alt: "Humble Daisy, Inc Logo"), root_path, class: 'logo-default'
-      = link_to image_tag('HumbleDaisy_Logo.png'), root_path, class: 'logo-scroll'
       -# %img.logo-default{:alt => "", :src => "assets/images/logo-light.png"}/
       -# %img.logo-scroll{:alt => "", :src => "assets/images/logo.png"}/
+      = image_tag('HumbleDaisy_Logo.png', class: 'logo-default header-logo')
+      = image_tag('HumbleDaisy_Logo.png', class: 'logo-scroll header-logo')
     #navbarNavDropdown.collapse.navbar-collapse
       %ul.navbar-nav.ml-auto
         %li.nav-item.dropdown
@@ -107,4 +94,4 @@
     .search-nav.float-right
       %a{:href => "javascript:void(0)"}
         %i.ion-search
-    / navbar end
+/ navbar end

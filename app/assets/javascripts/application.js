@@ -10,8 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery2
+//= require bootstrap
+//= require tether
 //= require rails-ujs
 //= require turbolinks
+//= require plugins/plugins
+//= require template-custom
+
 //= require_tree .
     $(document).on('turbolinks:load', function() {
       setActiveLink();

@@ -16,10 +16,11 @@
 @charset 'utf-8';
 
 @import 'normalize-rails';
-
 @import 'font-awesome';
 @import 'bourbon';
-@import 'pages';
+@import 'neat';
+// Custom bootstrap variables must be set or imported before bootstrap itself.
 @import 'scss/style';
-@import 'neat';  // Custom bootstrap variables must be set or imported before bootstrap itself.
 @import 'bootstrap';
+@import 'custom';
+
