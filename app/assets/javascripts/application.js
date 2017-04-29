@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery2
-//= require bootstrap
 //= require tether
+//= require bootstrap
 //= require rails-ujs
 //= require turbolinks
 //= require plugins/plugins
